@@ -1,0 +1,93 @@
+    Bienvenido a
+बैंगलोर सार्वजनिक पुस्तकालय
+Biblioteca Bengalore
+
+Pulse C para continuar
+U:c
+       MENÚ 
+Seleccione una opción:
+* Buscar un artículo (B)
+* Salir (S) 
+U:b
+#	| 			   Libro 			|		   Autor 
+1	| La ciudad de la luna      	|	  Zoila Del Toro
+2	| Cocina en todas partes    	|	  Enrique Marshall
+3	| Cocina en todas partes    	|	  Samuel Gardfield
+4	| El niño de la luna        	|	  Raul Del Piero
+5	| La era en el espacio      	|	  Doroty Gardfield
+6	| El secreto contigo        	|	  Doroty Lee
+7	| Monstruos de la guerra    	|	  Sandra Marshall
+8	| La máquina del futuro     	|	  Pablo Lopez
+9	| Tortura del mar           	|	  Max Piedra
+10	| Misterios radical         	|	  Tom Urcuango
+11	| Aliens del más allá       	|	  Cristina Toapanta
+12	| Tortura en el espacio     	|	  Bryan Lee
+13	| El auto misteriosos       	|	  Samuel Lee
+14	| El niño radical           	|	  Cristina Maccarone
+15	| Guerra con pasión         	|	  Cristina Jackson
+16	| Aliens del futuro         	|	  Tom Jhonson
+17	| La ruina del futuro       	|	  Sandra Lopez
+18	| Tortura en el espacio     	|	  Tom Toapanta
+19	| Cocina del diablo         	|	  Tom Chang
+20	| Cocina con pasión         	|	  Lisa Jackson
+
+Seleccione una opción
+U:1
+Libro # 	WRJTLANJ
+Título: 	La ciudad de la luna    
+Autor: 		Zoila Del Toro
+Año: 		1963
+Disponible:	NO
+* Pedir el artículo (P)
+* Devolver el artículo (D)
+* Atras (A) 
+U:p
+Error: el Libro no está disponible.
+
+       MENÚ 
+Seleccione una opción:
+* Buscar un artículo (B)
+* Salir (S) 
+U:b
+#	| 			   Libro 			|		   Autor 
+1	| La ciudad de la luna      	|	  Zoila Del Toro
+2	| Cocina en todas partes    	|	  Enrique Marshall
+3	| Cocina en todas partes    	|	  Samuel Gardfield
+4	| El niño de la luna        	|	  Raul Del Piero
+5	| La era en el espacio      	|	  Doroty Gardfield
+6	| El secreto contigo        	|	  Doroty Lee
+7	| Monstruos de la guerra    	|	  Sandra Marshall
+8	| La máquina del futuro     	|	  Pablo Lopez
+9	| Tortura del mar           	|	  Max Piedra
+10	| Misterios radical         	|	  Tom Urcuango
+11	| Aliens del más allá       	|	  Cristina Toapanta
+12	| Tortura en el espacio     	|	  Bryan Lee
+13	| El auto misteriosos       	|	  Samuel Lee
+14	| El niño radical           	|	  Cristina Maccarone
+15	| Guerra con pasión         	|	  Cristina Jackson
+16	| Aliens del futuro         	|	  Tom Jhonson
+17	| La ruina del futuro       	|	  Sandra Lopez
+18	| Tortura en el espacio     	|	  Tom Toapanta
+19	| Cocina del diablo         	|	  Tom Chang
+20	| Cocina con pasión         	|	  Lisa Jackson
+
+Seleccione una opción
+U:20
+Libro # 	QRODVERV
+Título: 	Cocina con pasión       
+Autor: 		Lisa Jackson
+Año: 		1941
+Disponible:	SI
+* Pedir el artículo (P)
+* Devolver el artículo (D)
+* Atras (A) 
+U:p
+Libro prestado con éxito!
+
+       MENÚ 
+Seleccione una opción:
+* Buscar un artículo (B)
+* Salir (S) 
+U:s
+
+	Gracias por venir.

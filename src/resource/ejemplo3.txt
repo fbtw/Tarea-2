@@ -1,0 +1,89 @@
+    Bienvenido a
+बैंगलोर सार्वजनिक पुस्तकालय
+Biblioteca Bengalore
+
+Pulse C para continuar
+U:c
+       MENÚ 
+Seleccione una opción:
+* Buscar un artículo (B)
+* Salir (S) 
+U:b
+#	| 			   Libro 			|		   Autor 
+1	| Guerra y de más           	|	  Marta Martinez
+2	| Guerra de la guerra       	|	  Tom Sylvestre
+3	| La era contigo            	|	  Bryan Konstantinovich
+4	| El niño y de más          	|	  Anthony Urcuango
+5	| El secreto de la guerra   	|	  Raul Sylvestre
+6	| Locura radical            	|	  Pablo Simpson
+7	| Guerra en la sombra       	|	  Mike Jackson
+8	| Guerra contigo            	|	  Ana Maria Lopez
+9	| El niño contigo           	|	  Doroty Manson
+10	| Monstruos en el lago      	|	  Zoila Jhonson
+
+Seleccione una opción
+U:1
+Libro # 	MEKBOYNY
+Título: 	Guerra y de más         
+Autor: 		Marta Martinez
+Año: 		1984
+Disponible:	NO
+* Pedir el artículo (P)
+* Devolver el artículo (D)
+* Atras (A) 
+U:p
+Error: el Libro no está disponible.
+
+       MENÚ 
+Seleccione una opción:
+* Buscar un artículo (B)
+* Salir (S) 
+U:b
+#	| 			   Libro 			|		   Autor 
+1	| Guerra y de más           	|	  Marta Martinez
+2	| Guerra de la guerra       	|	  Tom Sylvestre
+3	| La era contigo            	|	  Bryan Konstantinovich
+4	| El niño y de más          	|	  Anthony Urcuango
+5	| El secreto de la guerra   	|	  Raul Sylvestre
+6	| Locura radical            	|	  Pablo Simpson
+7	| Guerra en la sombra       	|	  Mike Jackson
+8	| Guerra contigo            	|	  Ana Maria Lopez
+9	| El niño contigo           	|	  Doroty Manson
+10	| Monstruos en el lago      	|	  Zoila Jhonson
+
+Seleccione una opción
+U:20 
+Opción incorrecta, intente de nuevo
+
+#	| 			   Libro 			|		   Autor 
+1	| Guerra y de más           	|	  Marta Martinez
+2	| Guerra de la guerra       	|	  Tom Sylvestre
+3	| La era contigo            	|	  Bryan Konstantinovich
+4	| El niño y de más          	|	  Anthony Urcuango
+5	| El secreto de la guerra   	|	  Raul Sylvestre
+6	| Locura radical            	|	  Pablo Simpson
+7	| Guerra en la sombra       	|	  Mike Jackson
+8	| Guerra contigo            	|	  Ana Maria Lopez
+9	| El niño contigo           	|	  Doroty Manson
+10	| Monstruos en el lago      	|	  Zoila Jhonson
+
+Seleccione una opción
+U:10
+Libro # 	CAIEWCNA
+Título: 	Monstruos en el lago    
+Autor: 		Zoila Jhonson
+Año: 		2006
+Disponible:	SI
+* Pedir el artículo (P)
+* Devolver el artículo (D)
+* Atras (A) 
+U:p
+Libro prestado con éxito!
+
+       MENÚ 
+Seleccione una opción:
+* Buscar un artículo (B)
+* Salir (S) 
+U:s
+
+	Gracias por venir.
