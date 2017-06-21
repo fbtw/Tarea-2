@@ -1,0 +1,115 @@
+
+                    CLASE LIBRO (original)
+package fbtw.app;
+
+public class Libro {
+
+Libro(String id, String título, Boolean prestado, String autor, int año) {
+        super(id,título,prestado,autor,año);
+        this.setId(super.getId());
+        this.setTítulo(super.getTítulo());
+        this.setPrestado(super.getPrestado());
+        this.setAutor(super.getAutor());
+        this.setAño(super.getAño());
+
+        this.setCualArtículo(CualArtículo.Libro);
+    }
+
+
+    private String título;
+    private String id;
+    private Boolean prestado;
+    private String autor;
+    private int año;
+
+    protected String getId() {
+        return id;
+    }
+
+    protected void setId(String id) {
+        this.id = id;
+    }
+
+    protected Boolean getPrestado() {
+        return prestado;
+    }
+
+    protected void setPrestado(Boolean prestado) {
+        this.prestado = prestado;
+    }
+
+    protected String getAutor() {
+        return autor;
+    }
+
+    protected void setAutor(String autor) {
+        this.autor = autor;
+    }
+
+    protected int getAño() {
+        return año;
+    }
+
+    protected void setAño(int año) {
+        this.año = año;
+    }
+
+    protected void setTítulo(String título) {
+        this.título = título;
+    }
+
+    protected String getTítulo() {
+        return título;
+    }
+}
+
+                    CLASE PRINCIPAL (Ahora Imprenta.java)
+package fbtw.app;
+
+import static java.lang.System.out;
+
+public class Principal {
+
+    private static String in;
+    private static int in2;
+
+    public static void inicio(String in) {
+
+        setIn(in);
+        imprimirInicio();
+
+    }
+
+    public static  void menú(String in){
+        setIn(in);
+        imprimirMenú();
+    }
+
+    public static void menú2(int in2) {
+        setIn2(in2);
+        imprimirMenú2();
+    }
+
+    public static void detalle(String in) {
+        setIn(in);
+        imprimirDetalle();
+    }
+
+    public static String getIn() {
+        return in;
+    }
+
+    private static void setIn(String In) {
+        In=In.toLowerCase();
+        in = In;
+    }
+
+    public static int getIn2() {
+
+        return in2;
+    }
+
+    private static void setIn2(int in2) {
+        Principal.in2 = in2;
+    }
+}

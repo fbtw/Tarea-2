@@ -1,0 +1,17 @@
+
+# Paquetes #
+*.jar
+*.bat
+
+# Archivos de Gradle
+.gradle
+build.gradle
+gradlew
+gradle
+settings.gradle
+
+# carpeta idea
+.idea
+
+# carpeta out
+out
