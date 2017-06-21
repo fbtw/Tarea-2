@@ -1,19 +1,20 @@
 
 # Paquetes #
-*.jar
 *.bat
 
 # Archivos de Gradle
-.gradle
+/gradle/
+/.gradle/
 build.gradle
 gradlew
-gradle
 settings.gradle
 
 # carpeta idea
-.idea
+/.idea/
 
 # carpeta out
-out
+/out/
 
-!/.gitignore
+# ???
+/Tarea-2/
+!/gradle/wrapper/gradle-wrapper.properties
