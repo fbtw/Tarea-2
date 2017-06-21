@@ -1,5 +1,8 @@
 **Biblioteca de Bengalore**
 
+Esta es la biblioteca pública de Bengalore, el sistema descrito a continuación tiene varias funciones que facilitarán la vida del bibliotecario como buscar en una báse de datos, pedir y devolver libros disponibles,
+ por el momento la biblioteca cuenta solo con libros, sin embargo el programa está diseñado para que vayan agregando nuevos artículos diferentes en el futuro.
+ 
 
 **Recursos**
 
@@ -10,9 +13,11 @@ _No es sensible a mayúsculas_
 
 `cinco.txt` = 5 _creado con propósitos de prueba_
 
+`ejemplo#.txt` archivos de salida de datos, muestran resultados de ejemplo para varias pruebas realizadas.
+
 **Fuentes**
 
-`Libro.java` Clase con la que se instancian libros, contiene solo 1 método que imprime los detalles, hereda las valores de Artículo
+`Libro.java` Clase con la que se instancian libros, contiene solo 1 método que imprime los detalles, hereda los valores de Artículo
 
 `Artículo.java` Clase abstracta con variables para posibles artículos, posibilidades enumeradas en CualArtículo
 
