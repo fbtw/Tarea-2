@@ -92,7 +92,7 @@ class Editorial {
             case 16: título="Tortura"; break;
             case 17: título="Árboles"; break;
             case 18: título="Monstruos"; break;
-            case 19: título="La siudad"; break;
+            case 19: título="La ciudad"; break;
             case 20: título="El secreto"; break;
 
         }
