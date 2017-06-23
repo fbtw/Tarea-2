@@ -20,8 +20,8 @@ public class PrincipalTest  {
     @Before
     public void prep() throws FileNotFoundException {
         sc = new Scanner(file);
-        //Cambia el metodo out de System para que escriba en un archivo en vez de en consola.
-        PrintStream out = new PrintStream(new FileOutputStream("src/resource/ejemplo.txt"));
+        // Cambia el metodo out de System para que escriba en un archivo en vez de en consola.
+        PrintStream out = new PrintStream(new FileOutputStream("src/resource/ejemplo4.txt"));
         System.setOut(out);
 
     }
@@ -67,12 +67,15 @@ public class PrincipalTest  {
             }
             bangalore.detalleLibrosBiblioteca();
             Imprenta.imprimirMenú2(ingreso2);
-
-            if ((ingreso2>0)&&(ingreso2<=bangalore.getLibros().size())) {
+            if (ingreso2>bangalore.getLibros().size()){
+                Imprenta.imprimirTamañoNúmero();
+            }
+            else if ((ingreso2>0)) {
                 detalle();
                 break;
             }
-            Imprenta.imprimirError();
+            else
+                Imprenta.imprimirError();
         }while (true);
     }
     @Test

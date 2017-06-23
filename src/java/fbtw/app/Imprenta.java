@@ -39,5 +39,5 @@ public class Imprenta {
     static void imprimirErrorNúmero(){
         out.print(" \nIngrese un número"+"\n");
     }
-
+    static void imprimirTamañoNúmero() { out.print(" \nEl número es muy grande"+"\n");}
 }

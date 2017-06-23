@@ -1,0 +1,59 @@
+    Bienvenido a
+बैंगलोर सार्वजनिक पुस्तकालय
+Biblioteca Bengalore
+
+Pulse C para continuar
+U:c
+       MENÚ 
+Seleccione una opción:
+* Buscar un artículo (B)
+* Salir (S) 
+U:b
+#	| 			   Libro 			|		   Autor 
+1	| La ruina en todas partes  	|	  Raul Jackson
+2	| El niño contigo           	|	  Max Sylvestre
+3	| Aliens de los imperios    	|	  Sandra Gardfield
+4	| Misterios contigo         	|	  Bryan Martinez
+5	| Árboles del futuro        	|	  Cristina Maccarone
+6	| La era en el espacio      	|	  Doroty Gardfield
+7	| Árboles fantasma          	|	  Marta Jackson
+8	| Castillo fantasma         	|	  Frank Lee
+9	| Tortura con pasión        	|	  Ana Maria Toapanta
+10	| La ciudad de la luna      	|	  Lisa Simpson
+
+Seleccione una opción
+U:11 
+El número es muy grande
+
+#	| 			   Libro 			|		   Autor 
+1	| La ruina en todas partes  	|	  Raul Jackson
+2	| El niño contigo           	|	  Max Sylvestre
+3	| Aliens de los imperios    	|	  Sandra Gardfield
+4	| Misterios contigo         	|	  Bryan Martinez
+5	| Árboles del futuro        	|	  Cristina Maccarone
+6	| La era en el espacio      	|	  Doroty Gardfield
+7	| Árboles fantasma          	|	  Marta Jackson
+8	| Castillo fantasma         	|	  Frank Lee
+9	| Tortura con pasión        	|	  Ana Maria Toapanta
+10	| La ciudad de la luna      	|	  Lisa Simpson
+
+Seleccione una opción
+U:10
+Libro # 	YPGJJLBT
+Título: 	La ciudad de la luna    
+Autor: 		Lisa Simpson
+Año: 		1909
+Disponible:	NO
+* Pedir el artículo (P)
+* Devolver el artículo (D)
+* Atras (A) 
+U:p
+Error: el Libro no está disponible.
+
+       MENÚ 
+Seleccione una opción:
+* Buscar un artículo (B)
+* Salir (S) 
+U:s
+
+	Gracias por venir.
