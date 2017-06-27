@@ -2,14 +2,14 @@ package fbtw.app;
 
 import static java.lang.System.out;
 
-abstract class Artículo {
+public class Artículo {
 
     private String id;
     private String título;
     private Boolean prestado;
     private String autor;
     private int año;
-    private CualArtículo cualArtículo;
+    private Tipo tipo;
 
     Artículo() {
         this.id = "";
@@ -26,24 +26,35 @@ abstract class Artículo {
         this.autor = autor;
         this.año = año;
     }
+    public void detalle(){
+        String sino;
+        if (getPrestado()) sino="NO";
+        else sino="SI";
+        out.println("\n"+ getTipo()+" # \t" + getId()+
+                "\nTítulo: \t" + getTítulo() +
+                "\nAutor: \t\t" + getAutor() +
+                "\nAño: \t\t" + getAño() +
+                "\nDisponible:\t"+sino);
+    }
     public void pedir(){
         if (!prestado){
             prestado=true;
-            out.println("\n"+cualArtículo+" prestado con éxito!");
+            out.println("\n"+ tipo +" prestado con éxito!");
         }
         else {
-            out.println("\n"+"Error: el "+cualArtículo+" no está disponible.");
+            out.println("\n"+"Error: el "+ tipo +" no está disponible.");
         }
     }
     public void devolver(){
         if (prestado){
             prestado=false;
-            out.println("\n"+cualArtículo+" devuelto con éxito!");
+            out.println("\n"+ tipo +" devuelto con éxito!");
         }
         else{
-            out.println("\n"+"Error: El "+cualArtículo+" ya existe.");
+            out.println("\n"+"Error: El "+ tipo +" ya existe.");
         }
     }
+
 
 
     public String getId() {
@@ -87,11 +98,11 @@ abstract class Artículo {
         return título;
     }
 
-    CualArtículo getCualArtículo() {
-        return cualArtículo;
+    Tipo getTipo() {
+        return tipo;
     }
 
-    void setCualArtículo(CualArtículo cualArtículo) {
-        this.cualArtículo = cualArtículo;
+    void setTipo(Tipo tipo) {
+        this.tipo = tipo;
     }
 }

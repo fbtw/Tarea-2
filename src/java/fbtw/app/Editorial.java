@@ -5,15 +5,16 @@ import java.util.List;
 
 class Editorial {
 
-    public static List<Libro> crearLibros(int x){
-        List<Libro> lib = new ArrayList<>();
+    public static List<Artículo> crearLibros(int x){
+        List<Artículo> lib = new ArrayList<>();
         for (int i=0;i<x;i++){
-            Libro nuevoLibro = new Libro();
+            Artículo nuevoLibro = new Artículo() ;
             nuevoLibro.setId(crearID());
             nuevoLibro.setAutor(crearAutor());
             nuevoLibro.setTítulo(crearTítulo());
             nuevoLibro.setPrestado(crearBooleano());
             nuevoLibro.setAño((int)(Math.random()*121+1900));
+            nuevoLibro.setTipo(Tipo.Libro);
             lib.add(nuevoLibro);
         }
         return lib;

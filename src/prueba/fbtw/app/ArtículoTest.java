@@ -3,8 +3,9 @@ package fbtw.app;
 import org.junit.*;
 
 
-public class LibroTest {
-    private final Libro unLibro = new Libro();
+public class ArtículoTest {
+    private final Artículo unLibro = new Artículo();
+
 
     @Test
     public void títuloTest() throws Exception {
@@ -42,8 +43,8 @@ public class LibroTest {
     @Test
     public void cualArticuloTest() throws Exception {
         //Libro unLibro = new Libro();
-        CualArtículo cualArtículo  = CualArtículo.Libro;
-        Assert.assertEquals(cualArtículo,unLibro.getCualArtículo());
+        Tipo tipo = Tipo.Libro;
+        Assert.assertEquals(tipo,unLibro.getTipo());
     }
 
 

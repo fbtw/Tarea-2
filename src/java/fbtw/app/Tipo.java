@@ -1,6 +1,6 @@
 package fbtw.app;
 
-public enum CualArtículo {
+public enum Tipo {
     Libro,
     Revista,
     Tésis,
