@@ -3,82 +3,41 @@
 Biblioteca Bengalore
 
 Pulse C para continuar
-U:c
+U:
        MENÚ 
 Seleccione una opción:
 * Buscar un artículo (B)
+* Pedir un artículo (P)
+* Devolver un artículo (D)
 * Salir (S) 
-U:b
-#	| 			   Libro 			|		   Autor 
-1	| Fantasia del mar          	|	  Katy Del Piero
-2	| Fantasia y piratas        	|	  Anthony Chang
-3	| La era contigo            	|	  Ana Maria Del Toro
-4	| Guerra en todas partes    	|	  Cristina Jackson
-5	| El niño del diablo        	|	  Cristina Marshall
-6	| El arte de la guerra      	|	  Wilson Gardfield
-7	| Locura contigo            	|	  Anthony Miyazaki
-8	| Locura en el lago         	|	  Zoila Konstantinovich
-9	| El auto en la sombra      	|	  Ana Maria Jhonson
-10	| El niño del futuro        	|	  Pablo Simpson
-11	| El auto misteriosos       	|	  Raul Maccarone
-12	| Aliens del diablo         	|	  Pablo Manson
+U:
+       MENÚ 
+Seleccione el artículo:
+* (L)ibro
+* (R)evista
+* (B)lu-Ray
+* (T)ésis
+* (E)nsayo
+U:Artículo no encontrado
 
-Seleccione una opción
-U:4
-Libro # 	YZFQLYFO
-Título: 	Guerra en todas partes  
-Autor: 		Cristina Jackson
-Año: 		1912
+#	| 			   Libro 			|		   Autor 
+1	| La máquina en todas partes  	|	  Samuel Martinez
+2	| Tortura de la luna        	|	  Tom Miyazaki
+3	| La ruina en el espacio    	|	  Samuel Gardfield
+4	| La ciudad de la montaña   	|	  Cristina Toapanta
+5	| El auto del más allá      	|	  Pablo Lee
+6	| El auto con pasión        	|	  Zoila Chang
+
+Libro # 	SWUPABPG
+Título: 	La máquina en todas partes
+Autor: 		Samuel Martinez
+Año: 		1947
 Disponible:	NO
 * Pedir el artículo (P)
 * Devolver el artículo (D)
 * Atras (A) 
-U:p
+U:
 Error: el Libro no está disponible.
 
-       MENÚ 
-Seleccione una opción:
-* Buscar un artículo (B)
-* Salir (S) 
-U:b
-#	| 			   Libro 			|		   Autor 
-1	| Fantasia del mar          	|	  Katy Del Piero
-2	| Fantasia y piratas        	|	  Anthony Chang
-3	| La era contigo            	|	  Ana Maria Del Toro
-4	| Guerra en todas partes    	|	  Cristina Jackson
-5	| El niño del diablo        	|	  Cristina Marshall
-6	| El arte de la guerra      	|	  Wilson Gardfield
-7	| Locura contigo            	|	  Anthony Miyazaki
-8	| Locura en el lago         	|	  Zoila Konstantinovich
-9	| El auto en la sombra      	|	  Ana Maria Jhonson
-10	| El niño del futuro        	|	  Pablo Simpson
-11	| El auto misteriosos       	|	  Raul Maccarone
-12	| Aliens del diablo         	|	  Pablo Manson
-
-Seleccione una opción
-U:2
-Libro # 	MYURPNXJ
-Título: 	Fantasia y piratas      
-Autor: 		Anthony Chang
-Año: 		1941
-Disponible:	NO
-* Pedir el artículo (P)
-* Devolver el artículo (D)
-* Atras (A) 
-U:d
-Libro devuelto con éxito!
-
-       MENÚ 
-Seleccione una opción:
-* Buscar un artículo (B)
-* Salir (S) 
-U:ç 
-Opción incorrecta, intente de nuevo
-
-       MENÚ 
-Seleccione una opción:
-* Buscar un artículo (B)
-* Salir (S) 
-U:s
 
 	Gracias por venir.

@@ -4,40 +4,66 @@ import static java.lang.System.out;
 
 public class Imprenta {
 
-    static void imprimirInicio(String in){
+    static void imprimirInicio( ){
         out.print("    Bienvenido a"+"\n"+
                 "बैंगलोर सार्वजनिक पुस्तकालय"+"\n"+
                 "Biblioteca Bengalore"+"\n\n"+
                 "Pulse C para continuar"+"\n"+
-                "U:"+ in
+                "U:"
         );
     }
-    static void imprimirMenú(String in){
+    static void imprimirMenú( ){
         out.print("\n       MENÚ " +"\n"+
                 "Seleccione una opción:"+"\n"+
                 "* Buscar un artículo (B)"+"\n"+
-                // "* Devolver un artículo (D)"+"\n"+
+                "* Pedir un artículo (P)"+"\n"+
+                "* Devolver un artículo (D)"+"\n"+
                 "* Salir (S) "+"\n"+
-                "U:"+in
+                "U:"
         );
     }
-    static void imprimirMenú2(int in2){
-        out.print("\nSeleccione una opción" +
-                "\nU:"+in2);
+    static void imprimirMenúTipo( ){
+        out.print("\n       MENÚ " +"\n"+
+                "Seleccione el artículo:"+"\n"+
+                "* (L)ibro"+"\n"+
+                "* (R)evista"+"\n"+
+                "* (B)lu-Ray"+"\n"+
+                "* (T)ésis"+"\n"+
+                "* (E)nsayo"+"\n"+
+                "U:"
+        );
     }
-
-    static void imprimirDetalle(String in){
+    static void imprimirMenúPedir(){
+        out.print("\n       MENÚ " +"\n"+
+                "Seleccione el artículo que desea pedir\n"+
+                "U:"
+        );
+    }
+    static void imprimirMenúDevo(){
+        out.print("\n       MENÚ " +"\n"+
+                "Seleccione el artículo que desea devolver\n"+
+                "U:"
+        );
+    }
+    static void imprimirDetalle(){
         out.print("* Pedir el artículo (P)"+"\n"+
                 "* Devolver el artículo (D)"+"\n"+
                 "* Atras (A) "+"\n"+
-                "U:"+in
+                "U:"
         );
     }
     static void imprimirError(){
-        out.print(" \nOpción incorrecta, intente de nuevo"+"\n");
+        out.print("Opción incorrecta, intente de nuevo"+"\n");
     }
     static void imprimirErrorNúmero(){
-        out.print(" \nIngrese un número"+"\n");
+        out.print("Ingrese un número"+"\n");
     }
-    static void imprimirTamañoNúmero() { out.print(" \nEl número es muy grande"+"\n");}
+    static void imprimirTamañoNúmero() { out.print("El número es muy grande"+"\n");}
+
+    public static void imprimirVacio() {
+        out.print("Artículo no encontrado"+"\n");
+    }
+    public static void imprimirSalida() {
+        out.println("\n\n\tGracias por venir.");
+    }
 }
