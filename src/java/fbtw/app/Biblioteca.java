@@ -4,6 +4,7 @@ import java.util.*;
 
 import static java.lang.System.out;
 
+
 class Biblioteca {
 
     private List<Artículo> libros = new ArrayList<>();
@@ -20,11 +21,19 @@ class Biblioteca {
             i++;
         }
     }
+    public void detalleBluraysBiblioteca(){
+        int i=0;
+        out.println("\n#\t| \t\t\t Película \t\t\t|\t\t  Director ");
+        for(Artículo B:blurays){
+            out.println((i+1)+"\t| "+B.getTítulo()+"  \t|\t  "+B.getAutor());
+            i++;
+        }
+    }
     public void detalleArtículos(List<Artículo> lista){
         int i=0;
-        out.println("\n#\t| \t\t\t Artículo \t\t\t|\t\t  ID ");
-        for(Artículo L:lista){
-            out.println((i+1)+"\t| "+L.getTítulo()+"  \t|\t  "+L.getId());
+        out.println("\n#\t| \t\t\t Artículo \t\t\t|\t\t  ID \t\t|\t Tipo de artículo");
+        for(Artículo A:lista){
+            out.println((i+1)+"\t| "+A.getTítulo()+"  \t|\t  "+A.getId()+"\t\t|\t\t "+A.getTipo());
             i++;
         }
     }
@@ -37,26 +46,32 @@ class Biblioteca {
         this.libros = libros;
     }
 
+    @SuppressWarnings("unused")
     public List<Artículo> getRevistas() {
         return revistas;
     }
 
+    @SuppressWarnings("unused")
     public void setRevistas(List<Artículo> revistas) {
         this.revistas = revistas;
     }
 
+    @SuppressWarnings("unused")
     public List<Artículo> getEnsayos() {
         return ensayos;
     }
 
+    @SuppressWarnings("unused")
     public void setEnsayos(List<Artículo> ensayos) {
         this.ensayos = ensayos;
     }
 
+    @SuppressWarnings("unused")
     public List<Artículo> getTesis() {
         return tesis;
     }
 
+    @SuppressWarnings("unused")
     public void setTesis(List<Artículo> tesis) {
         this.tesis = tesis;
     }
@@ -68,33 +83,6 @@ class Biblioteca {
     public void setBlurays(List<Artículo> blurays) {
         this.blurays = blurays;
     }
-    /*
-    public List<Artículo> getArtículos(Tipo tipo) {
-        switch (tipo){
-            case Libro:return libros;
-            case Tésis:return tesis;
-            case Revista:return revistas;
-            case Ensayo:return ensayos;
-            case Bluray:return blurays;
-        }
-        return null;
-    }
 
-    public void setArtículos(List<Artículo> artículos,Tipo tipo) {
-        switch (tipo){
-            case Libro:this.libros = artículos;
-            case Tésis:this.tesis = artículos;
-            case Revista:this.revistas = artículos;
-            case Ensayo:this.ensayos = artículos;
-            case Bluray:this.blurays = artículos;
-        }
-    }
-*/
-
-    /*  En caso de agregar un nuevo artículo simplemente se agregaría:
-    *    private List<Revista> revistas = new ArrayList<>();
-    *    public void detalleRevistasBiblioteca(){ ... }
-    *    get+set revistas;
-    */
 
 }

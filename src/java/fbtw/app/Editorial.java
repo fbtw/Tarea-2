@@ -19,8 +19,40 @@ class Editorial {
         }
         return lib;
     }
-
-    public static String crearAutor(){
+    public static List<Artículo> crearBluray(int x){
+        List<Artículo> blu = new ArrayList<>();
+        for (int i=0;i<x;i++){
+            Artículo nuevoBluray= new Artículo() ;
+            nuevoBluray.setId(crearID());
+            nuevoBluray.setAutor(crearDirector());
+            nuevoBluray.setTítulo(crearTítulo());
+            nuevoBluray.setPrestado(crearBooleano());
+            nuevoBluray.setAño((int)(Math.random()*71+1950));
+            nuevoBluray.setTipo(Tipo.Bluray);
+            blu.add(nuevoBluray);
+        }
+        return blu;
+    }
+    public static String crearDirector(){
+        String direc="";
+        int azar = (int)(Math.random()*12+1);
+        switch (azar) {
+            case 1: direc="Alejandro Iñárritu"; break;
+            case 2: direc="Steven Spielberg"; break;
+            case 3: direc="Christopher Nolan"; break;
+            case 4: direc="Quentin Tarantino"; break;
+            case 5: direc="Francis F. Coppola"; break;
+            case 6: direc="Peter Jackson"; break;
+            case 7: direc="Clint Eastwood"; break;
+            case 8: direc="Hayao Miyazaki"; break;
+            case 9: direc="Alfred Hitchcock"; break;
+            case 10: direc="Stanley Kubrick"; break;
+            case 11: direc="James Cameron"; break;
+            case 12: direc="Martin Scorsese"; break;
+        }
+        return direc;
+    }
+    public static String crearAutor (){
         String autor="";
         int azar = (int)(Math.random()*20+1);
         switch (azar) {

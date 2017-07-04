@@ -7,6 +7,13 @@ import static java.lang.System.out;
 
 public class EditorialTest {
     @Test
+    public void crearDirector() throws Exception {
+        String d = Editorial.crearDirector();
+        out.print(d);
+        Assert.assertEquals("Alejandro Iñárritu", d );
+    }
+
+    @Test
     public void crearAutor() throws Exception {
         String a = Editorial.crearAutor();
         out.println(a);
