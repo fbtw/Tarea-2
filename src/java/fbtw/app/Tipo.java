@@ -1,9 +1,10 @@
 package fbtw.app;
 
+@SuppressWarnings("unused")
 public enum Tipo {
     Libro,
-    Revista,
-    Tésis,
-    Ensayo,
+    @SuppressWarnings("unused")Revista,
+    @SuppressWarnings("unused")Tésis,
+    @SuppressWarnings("unused")Ensayo,
     Bluray
 }

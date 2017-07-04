@@ -4,7 +4,6 @@
 
 # Archivos de Gradle
 /gradle/
-/.gradle/
 build.gradle
 gradlew
 settings.gradle

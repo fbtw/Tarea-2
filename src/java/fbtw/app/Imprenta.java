@@ -2,7 +2,7 @@ package fbtw.app;
 
 import static java.lang.System.out;
 
-public class Imprenta {
+class Imprenta {
 
     static void imprimirInicio( ){
         out.print("    Bienvenido a"+"\n"+
@@ -23,7 +23,7 @@ public class Imprenta {
         );
     }
     static void imprimirMenúTipo( ){
-        out.print("\n       MENÚ " +"\n"+
+        out.print("\n"+
                 "Seleccione el artículo:"+"\n"+
                 "* (L)ibro"+"\n"+
                 "* (R)evista"+"\n"+
@@ -34,13 +34,13 @@ public class Imprenta {
         );
     }
     static void imprimirMenúPedir(){
-        out.print("\n       MENÚ " +"\n"+
+        out.print("\n"+
                 "Seleccione el artículo que desea pedir\n"+
                 "U:"
         );
     }
     static void imprimirMenúDevo(){
-        out.print("\n       MENÚ " +"\n"+
+        out.print("\n"+
                 "Seleccione el artículo que desea devolver\n"+
                 "U:"
         );
@@ -52,6 +52,9 @@ public class Imprenta {
                 "U:"
         );
     }
+    static void imprimirUsuario() { out.print("Ingrese el ID del usuario:");}
+    static void imprimirContraseña() { out.print("Ingrese la contraseña:");}
+
     static void imprimirError(){
         out.print("Opción incorrecta, intente de nuevo"+"\n");
     }
@@ -59,7 +62,8 @@ public class Imprenta {
         out.print("Ingrese un número"+"\n");
     }
     static void imprimirTamañoNúmero() { out.print("El número es muy grande"+"\n");}
-
+    static void imprimirErrorUsuario() { out.print("Nombre de usuario incorrecto"+"\n");}
+    static void imprimirErrorContraseña() { out.print("Contraseña incorrecta"+"\n");}
     public static void imprimirVacio() {
         out.print("Artículo no encontrado"+"\n");
     }

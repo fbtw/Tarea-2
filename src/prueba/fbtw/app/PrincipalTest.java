@@ -1,26 +1,21 @@
 package fbtw.app;
 
-import javafx.scene.input.KeyCode;
 import org.junit.*;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
-import java.util.List;
 import java.util.Scanner;
-
-import static java.lang.System.in;
-import static java.lang.System.out;
 
 public class PrincipalTest  {
 
     private static final File file = new File("src/resource/usuario.txt");
     private static String ingreso;
     private static int ingreso2;
-    private static Biblioteca bangalore = new Biblioteca();
+    private static final Biblioteca bangalore = new Biblioteca();
     private static Scanner sc =null;
-
+/*
     @Test
     public  void elegirTest ()throws java.lang.Exception {
        // bangalore.setArtículos(Editorial.crearLibros(6),Tipo.Libro);
@@ -48,7 +43,7 @@ public class PrincipalTest  {
         m=Principal.elegir(m,op);
         Assert.assertEquals("salir", m);
     }
-
+*/
 
     @Before
     public void prep() throws FileNotFoundException {

@@ -2,7 +2,7 @@ package fbtw.app;
 
 import static java.lang.System.out;
 
-public class Artículo {
+class Artículo {
 
     private String id;
     private String título;
@@ -19,13 +19,6 @@ public class Artículo {
         this.año = 0;
     }
 
-    Artículo(String id, String título, Boolean prestado, String autor, int año) {
-        this.id = id;
-        this.título = título;
-        this.prestado = prestado;
-        this.autor = autor;
-        this.año = año;
-    }
     public void detalle(){
         String sino;
         if (getPrestado()) sino="NO";
