@@ -33,41 +33,7 @@ class Principal {
         }while (!menu.equals("salida"));
     }
 
-    private static void presYdevu(){
-        prestados.clear();
-        disponibles.clear();
-        for (Artículo i : bangalore.getLibros() ){
-            if (i.getPrestado()){
-                prestados.add(i);
-            }else{
-                disponibles.add(i);
-            }
-        }for (Artículo i : bangalore.getRevistas() ){
-            if (i.getPrestado()){
-                prestados.add(i);
-            }else{
-                disponibles.add(i);
-            }
-        }for (Artículo i : bangalore.getTesis() ){
-            if (i.getPrestado()){
-                prestados.add(i);
-            }else{
-                disponibles.add(i);
-            }
-        }for (Artículo i : bangalore.getEnsayos() ){
-            if (i.getPrestado()){
-                prestados.add(i);
-            }else{
-                disponibles.add(i);
-            }
-        }for (Artículo i : bangalore.getBlurays() ){
-            if (i.getPrestado()){
-                prestados.add(i);
-            }else{
-                disponibles.add(i);
-            }
-        }
-    }
+
 
     private static String elegir (String menu ) {
         switch (menu) {
@@ -154,6 +120,10 @@ class Principal {
                     bangalore.detalleArtículos(disponibles);
                     listArticulos=disponibles;
                 }
+                break;
+            case "i":
+                usuario.imprimirInformación();
+
                 break;
             case "s":
                 menu = "salir";
@@ -296,7 +266,41 @@ class Principal {
         }
         return menu;
     }
-
+    private static void presYdevu(){
+        prestados.clear();
+        disponibles.clear();
+        for (Artículo i : bangalore.getLibros() ){
+            if (i.getPrestado()){
+                prestados.add(i);
+            }else{
+                disponibles.add(i);
+            }
+        }for (Artículo i : bangalore.getRevistas() ){
+            if (i.getPrestado()){
+                prestados.add(i);
+            }else{
+                disponibles.add(i);
+            }
+        }for (Artículo i : bangalore.getTesis() ){
+            if (i.getPrestado()){
+                prestados.add(i);
+            }else{
+                disponibles.add(i);
+            }
+        }for (Artículo i : bangalore.getEnsayos() ){
+            if (i.getPrestado()){
+                prestados.add(i);
+            }else{
+                disponibles.add(i);
+            }
+        }for (Artículo i : bangalore.getBlurays() ){
+            if (i.getPrestado()){
+                prestados.add(i);
+            }else{
+                disponibles.add(i);
+            }
+        }
+    }
     private static Usuario usuarioEjemplo(){
         Usuario u=new Usuario();
         u.setID("asd-1234");

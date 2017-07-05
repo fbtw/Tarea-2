@@ -17,3 +17,4 @@ settings.gradle
 # ???
 /Tarea-2/
 !/gradle/wrapper/gradle-wrapper.properties
+/lib/

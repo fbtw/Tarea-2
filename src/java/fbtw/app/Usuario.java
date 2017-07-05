@@ -1,5 +1,7 @@
 package fbtw.app;
 
+import static java.lang.System.out;
+
 class Usuario {
     private String nombre;
     private String ID;
@@ -8,7 +10,13 @@ class Usuario {
     private String dirección;
     private String telefono;
 
-
+    void imprimirInformación(){
+        out.println("\n#:\t\t\t" + getID()+
+                "\nNombre:\t\t" + getNombre() +
+                "\nEmail:\t\t" + getEmail() +
+                "\nDirección:\t" + getDirección() +
+                "\nTelefono:\t"+getTelefono());
+    }
 
     public String getNombre() {
         return nombre;

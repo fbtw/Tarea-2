@@ -18,6 +18,7 @@ class Imprenta {
                 "* Buscar un artículo (B)"+"\n"+
                 "* Pedir un artículo (P)"+"\n"+
                 "* Devolver un artículo (D)"+"\n"+
+                "* Ver información (I)"+"\n"+
                 "* Salir (S) "+"\n"+
                 "U:"
         );
@@ -56,16 +57,16 @@ class Imprenta {
     static void imprimirContraseña() { out.print("Ingrese la contraseña:");}
 
     static void imprimirError(){
-        out.print("Opción incorrecta, intente de nuevo"+"\n");
+        out.println("Opción incorrecta, intente de nuevo");
     }
     static void imprimirErrorNúmero(){
-        out.print("Ingrese un número"+"\n");
+        out.println("Ingrese un número");
     }
-    static void imprimirTamañoNúmero() { out.print("El número es muy grande"+"\n");}
-    static void imprimirErrorUsuario() { out.print("Nombre de usuario incorrecto"+"\n");}
-    static void imprimirErrorContraseña() { out.print("Contraseña incorrecta"+"\n");}
+    static void imprimirTamañoNúmero() { out.println("El número es muy grande");}
+    static void imprimirErrorUsuario() { out.println("Nombre de usuario incorrecto");}
+    static void imprimirErrorContraseña() { out.println("Contraseña incorrecta");}
     public static void imprimirVacio() {
-        out.print("Artículo no encontrado"+"\n");
+        out.println("Artículo no encontrado");
     }
     public static void imprimirSalida() {
         out.println("\n\n\tGracias por venir.");
