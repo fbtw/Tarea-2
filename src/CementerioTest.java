@@ -15,6 +15,90 @@ import static org.junit.Assert.assertTrue;
 
 public class CementerioTest {
 
+    //PrincipalTest.java
+    @Test
+    public void inicio() throws java.lang.Exception {
+        Imprenta.imprimirInicio();
+        do {
+            ingreso = sc.nextLine().toLowerCase();
+            if (ingreso.equals("c")) {
+                menú();
+                break;
+            }
+            Imprenta.imprimirError();
+        }while (true);
+    }
+
+    @Test
+    public void menú() throws java.lang.Exception {   //menú
+        Imprenta.imprimirMenú();
+        do {
+            ingreso = sc.nextLine().toLowerCase();
+
+            if (ingreso.equals("b")) {
+                menú2();
+                break;
+            }
+            if (ingreso.equals("s")) {
+                Imprenta.imprimirSalida();
+                break;
+            }
+            Imprenta.imprimirError();
+        }while (true);
+
+    }
+    @Test
+    public void menú2() throws java.lang.Exception { //buscar
+        ingreso2=0;
+
+        bangalore.detalleLibrosBiblioteca();
+        // Imprenta.imprimirMenú2();
+
+        do {
+            ingreso = sc.nextLine();
+            try{
+                ingreso2 = Integer.parseInt(ingreso);
+            } catch (NumberFormatException e) {
+                Imprenta.imprimirErrorNúmero();
+            }
+            if (ingreso2>bangalore.getLibros().size()){
+                Imprenta.imprimirTamañoNúmero();
+            }
+            else if ((ingreso2>0)) {
+                detalle();
+                break;
+            }
+            else
+                Imprenta.imprimirError();           //impo
+        }while (true);
+    }
+    @Test
+    public void detalle() throws java.lang.Exception {
+        if (ingreso2==0)ingreso2=1;
+        Artículo libro=bangalore.getLibros().get(ingreso2-1);
+        libro.detalle();
+        Imprenta.imprimirDetalle();
+        do {
+            ingreso = sc.nextLine().toLowerCase();
+
+            if (ingreso.equals("p")) {
+                libro.pedir();
+                menú();
+                break;
+            }
+            if (ingreso.equals("d")) {
+                libro.devolver();
+                menú();
+                break;
+            }
+            if (ingreso.equals("a")) {
+                menú();
+                break;
+            }
+            Imprenta.imprimirError();
+        }while (true);
+    }
+
     // Pruebas I/O
     @Test   // [✓]
     public void testScanner() throws Exception {
