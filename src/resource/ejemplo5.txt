@@ -1,0 +1,129 @@
+    Bienvenido a
+बैंगलोर सार्वजनिक पुस्तकालय
+Biblioteca Bengalore
+
+Pulse C para continuar
+U:Ingrese el ID del usuario:Nombre de usuario incorrecto
+Ingrese el ID del usuario:Ingrese la contraseña:Contraseña incorrecta
+Ingrese la contraseña:
+       MENÚ 
+Seleccione una opción:
+* Buscar un artículo (B)
+* Pedir un artículo (P)
+* Devolver un artículo (D)
+* Ver información (I)
+* Salir (S) 
+U:
+#	| 			 Artículo 			|		  ID 		|	 Tipo de artículo
+1	| La máquina del más allá   	|	  HUZHICWJ		|		 Libro
+2	| Fantasia misteriosos      	|	  RWBYCDTB		|		 Libro
+3	| La ruina en el lago       	|	  ARHPUBOH		|		 Bluray
+4	| La ciudad y piratas       	|	  CHTWNKYQ		|		 Bluray
+5	| La máquina en el espacio  	|	  QALVHNDC		|		 Bluray
+6	| Misterios y piratas       	|	  MIFKJSJA		|		 Bluray
+7	| El maestro en la sombra   	|	  JWLDEHEP		|		 Bluray
+8	| Aliens radical            	|	  ULTMHQHY		|		 Bluray
+
+Seleccione el artículo que desea pedir
+U:
+Libro # 	HUZHICWJ
+Título: 	La máquina del más allá 
+Autor: 		Bryan Del Toro
+Año: 		2005
+Disponible:	SI
+
+Libro prestado con éxito!
+
+       MENÚ 
+Seleccione una opción:
+* Buscar un artículo (B)
+* Pedir un artículo (P)
+* Devolver un artículo (D)
+* Ver información (I)
+* Salir (S) 
+U:
+#	| 			 Artículo 			|		  ID 		|	 Tipo de artículo
+1	| La máquina del más allá   	|	  HUZHICWJ		|		 Libro
+2	| Guerra de la guerra       	|	  IRFHZBOR		|		 Libro
+3	| Aliens contigo            	|	  ONGDLVGK		|		 Libro
+4	| Aliens misteriosos        	|	  LISNTFNN		|		 Libro
+5	| La ruina del más allá     	|	  ZNEVEBLI		|		 Libro
+6	| Locura del mar            	|	  FRLSMRUK		|		 Libro
+7	| Aliens en todas partes    	|	  SLUCPMGH		|		 Bluray
+8	| La era en la sombra       	|	  XYNEJFAE		|		 Bluray
+9	| Aliens y piratas          	|	  NOUDKQKF		|		 Bluray
+10	| El arte y de más          	|	  BTXDJNZQ		|		 Bluray
+
+Seleccione el artículo que desea devolver
+U:
+Bluray # 	XYNEJFAE
+Título: 	La era en la sombra     
+Autor: 		Christopher Nolan
+Año: 		1969
+Disponible:	NO
+
+Bluray devuelto con éxito!
+
+       MENÚ 
+Seleccione una opción:
+* Buscar un artículo (B)
+* Pedir un artículo (P)
+* Devolver un artículo (D)
+* Ver información (I)
+* Salir (S) 
+U:
+Seleccione el artículo:
+* (L)ibro
+* (R)evista
+* (B)lu-Ray
+* (T)ésis
+* (E)nsayo
+U:
+#	| 			 Película 			|		  Director 
+1	| Aliens en todas partes    	|	  Steven Spielberg
+2	| La ruina en el lago       	|	  James Cameron
+3	| La era en la sombra       	|	  Christopher Nolan
+4	| La ciudad y piratas       	|	  Alfred Hitchcock
+5	| La máquina en el espacio  	|	  Stanley Kubrick
+6	| Aliens y piratas          	|	  Martin Scorsese
+7	| El arte y de más          	|	  Quentin Tarantino
+8	| Misterios y piratas       	|	  James Cameron
+9	| El maestro en la sombra   	|	  Steven Spielberg
+10	| Aliens radical            	|	  Francis F. Coppola
+El número es muy grande
+
+Bluray # 	QALVHNDC
+Título: 	La máquina en el espacio
+Autor: 		Stanley Kubrick
+Año: 		2003
+Disponible:	SI
+* Pedir el artículo (P)
+* Devolver el artículo (D)
+* Atras (A) 
+U:
+Error: El Bluray ya existe.
+
+       MENÚ 
+Seleccione una opción:
+* Buscar un artículo (B)
+* Pedir un artículo (P)
+* Devolver un artículo (D)
+* Ver información (I)
+* Salir (S) 
+U:
+#:			asd-1234
+Nombre:		Fulano
+Email:		email@yahoo.com
+Dirección:	xy y XD esquina
+Telefono:	09-955-5555
+
+       MENÚ 
+Seleccione una opción:
+* Buscar un artículo (B)
+* Pedir un artículo (P)
+* Devolver un artículo (D)
+* Ver información (I)
+* Salir (S) 
+U:
+
+	Gracias por venir.
