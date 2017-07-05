@@ -6,14 +6,15 @@ import java.util.List;
 import java.util.Scanner;
 
 import static java.lang.System.in;
+import static java.lang.System.out;
 
 class Principal {
     private static String ingreso;
-    private static final Biblioteca bangalore = new Biblioteca();
-    private static Scanner sc =null;
+     static final Biblioteca bangalore = new Biblioteca();
+    static Scanner sc =null;
     //private static Tipo tipo = null;
     private static int op2=0;
-    private static Usuario usuario;
+     static Usuario usuario;
     private static List<Artículo> listArticulos = new ArrayList<>();
     private static final List<Artículo> disponibles = new ArrayList<>();
     private static final List<Artículo> prestados = new ArrayList<>();
@@ -26,16 +27,13 @@ class Principal {
         usuario=usuarioEjemplo();
         String menu="bienvenida";
         Imprenta.imprimirInicio();
-       // ingreso = sc.nextLine().toLowerCase();
         do {
-            presYdevu();
             menu=elegir(menu);
-        }while (!menu.equals("salida"));
+        }while (!menu.equals("salir"));
     }
 
-
-
-    private static String elegir (String menu ) {
+    static String elegir (String menu ) {
+        presYdevu();
         switch (menu) {
             case ("bienvenida"):
                 menu=mBienvenida();
@@ -88,7 +86,7 @@ class Principal {
     }
 
     private static String mContraseña(){
-         String menu="contraseña";
+        String menu="contraseña";
         Imprenta.imprimirContraseña();
         ingreso = sc.nextLine();
         if (ingreso.equals(usuario.getPass())) {menu = "principal";
@@ -301,7 +299,7 @@ class Principal {
             }
         }
     }
-    private static Usuario usuarioEjemplo(){
+    static Usuario usuarioEjemplo(){
         Usuario u=new Usuario();
         u.setID("asd-1234");
         u.setPass("pass");
