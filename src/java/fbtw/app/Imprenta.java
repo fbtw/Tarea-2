@@ -27,10 +27,7 @@ class Imprenta {
         out.print("\n"+
                 "Seleccione el artículo:"+"\n"+
                 "* (L)ibro"+"\n"+
-                "* (R)evista"+"\n"+
                 "* (B)lu-Ray"+"\n"+
-                "* (T)ésis"+"\n"+
-                "* (E)nsayo"+"\n"+
                 "U:"
         );
     }

@@ -73,6 +73,30 @@ public class Principal {
     private static String in;
     private static int in2;
 
+    // switch menu
+            case "r":
+                if (bangalore.getRevistas().isEmpty()){Imprenta.imprimirVacio();}
+                else {menu = "artic";
+                    listArticulos = bangalore.getRevistas();
+                    //bangalore.detalleRevistasBiblioteca();
+                }
+                break;
+            case "e":
+                if (bangalore.getEnsayos().isEmpty()){Imprenta.imprimirVacio();  }
+                else {menu = "artic";
+                    listArticulos = bangalore.getEnsayos();
+                    //bangalore.detalleEnsayosBiblioteca();
+                }
+                break;
+            case "t":
+                if (bangalore.getTesis().isEmpty()){Imprenta.imprimirVacio(); }
+                else {menu = "artic";
+                    listArticulos = bangalore.getTesis();
+                    // bangalore.detalleTesisBiblioteca();
+                }
+                break;
+
+
     public static void inicio(String in) {
 
         setIn(in);

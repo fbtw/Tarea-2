@@ -14,7 +14,8 @@ settings.gradle
 # carpeta out
 /out/
 
-# ???
-/Tarea-2/
 !/gradle/wrapper/gradle-wrapper.properties
 /lib/
+/src/java/fbtw/app/Tipo.java
+/src/cementerio
+/src/CementerioTest.java

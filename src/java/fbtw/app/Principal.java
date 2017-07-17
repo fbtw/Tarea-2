@@ -6,7 +6,6 @@ import java.util.List;
 import java.util.Scanner;
 
 import static java.lang.System.in;
-import static java.lang.System.out;
 
 class Principal {
     private static String ingreso;
@@ -22,9 +21,9 @@ class Principal {
     public static void main (String[] args) throws Exception {
         sc = new Scanner(in);
         //datos falsos
-        bangalore.setLibros(Editorial.crearLibros(6));
-        bangalore.setBlurays(Editorial.crearBluray(5));
-        usuario=usuarioEjemplo();
+        bangalore.setLibros(Inventor.crearLibros(6));
+        bangalore.setBlurays(Inventor.crearBluray(5));
+        usuario=Inventor.crearUsuario();
         String menu="bienvenida";
         Imprenta.imprimirInicio();
         do {
@@ -36,37 +35,37 @@ class Principal {
         presYdevu();
         switch (menu) {
             case ("bienvenida"):
-                menu=mBienvenida();
+                menu= menúBienvenida();
                 break;
             case ("usuario"):
-                menu=mUsuario();
+                menu= menúUsuario();
                 break;
             case ("contraseña"):
-                menu=mContraseña();
+                menu= menúContraseña();
                 break;
             case ("principal"):
-                menu=mPrincipal();
+                menu= menúPrincipal();
                 break;
             case ("tipo"):
-                menu=mTipo();
+                menu= menúTipo();
                 break;
             case ("artic"):
-                menu=mArtic();
+                menu= menúArticulo();
                 break;
             case ("detalle"):
-                menu=mDetalle();
+                menu= menúDetalle();
                 break;
             case ("prestar"):
-                menu=mPrestar();
+                menu= menúPrestar();
                 break;
             case ("devolver"):
-                menu=mDevolver();
+                menu= menúDevolver();
                 break;
         }
         return menu;
     }
 
-    private static String mBienvenida(){
+    private static String menúBienvenida(){
         String menu="bienvenida";
         ingreso = sc.nextLine().toLowerCase();
         if (ingreso.equals("c")) {menu = "usuario";
@@ -75,7 +74,7 @@ class Principal {
         return menu;
     }
 
-    private static String mUsuario(){
+    private static String menúUsuario(){
         String menu="usuario";
         Imprenta.imprimirUsuario();
         ingreso = sc.nextLine();
@@ -85,7 +84,7 @@ class Principal {
         return menu;
     }
 
-    private static String mContraseña(){
+    private static String menúContraseña(){
         String menu="contraseña";
         Imprenta.imprimirContraseña();
         ingreso = sc.nextLine();
@@ -95,7 +94,7 @@ class Principal {
         return menu;
     }
 
-    private static String mPrincipal(){
+    private static String menúPrincipal(){
         String menu="principal";
         Imprenta.imprimirMenú();
         ingreso = sc.nextLine().toLowerCase();
@@ -132,7 +131,7 @@ class Principal {
         return menu;
     }
 
-    private static String mPrestar(){
+    private static String menúPrestar(){
          String menu="prestar";
         Imprenta.imprimirMenúPedir();
         ingreso = sc.nextLine().toLowerCase();
@@ -155,7 +154,7 @@ class Principal {
         return menu;
     }
 
-    private static String mDevolver(){
+    private static String menúDevolver(){
         String menu="devolver";
         Imprenta.imprimirMenúDevo();
         ingreso = sc.nextLine().toLowerCase();
@@ -176,7 +175,7 @@ class Principal {
         return menu;
     }
 
-    private static String mTipo(){
+    private static String menúTipo(){
          String menu="tipo";
 
         Imprenta.imprimirMenúTipo();
@@ -188,27 +187,7 @@ class Principal {
                     listArticulos = bangalore.getLibros();
                     bangalore.detalleLibrosBiblioteca();}
                 break;
-            case "r":
-                if (bangalore.getRevistas().isEmpty()){Imprenta.imprimirVacio();}
-                else {menu = "artic";
-                    listArticulos = bangalore.getRevistas();
-                    //bangalore.detalleRevistasBiblioteca();
-                }
-                break;
-            case "e":
-                if (bangalore.getEnsayos().isEmpty()){Imprenta.imprimirVacio();  }
-                else {menu = "artic";
-                    listArticulos = bangalore.getEnsayos();
-                    //bangalore.detalleEnsayosBiblioteca();
-                }
-                break;
-            case "t":
-                if (bangalore.getTesis().isEmpty()){Imprenta.imprimirVacio(); }
-                else {menu = "artic";
-                    listArticulos = bangalore.getTesis();
-                    // bangalore.detalleTesisBiblioteca();
-                }
-                break;
+
             case "b":
                 if (bangalore.getBlurays().isEmpty()){Imprenta.imprimirVacio();   }
                 else {menu = "artic";
@@ -224,7 +203,7 @@ class Principal {
         return menu;
     }
 
-    private static String mArtic(){
+    private static String menúArticulo(){
         String menu="artic";
         ingreso = sc.nextLine();
         try{
@@ -242,7 +221,7 @@ class Principal {
         return menu;
     }
 
-    private static String mDetalle(){
+    private static String menúDetalle(){
         String menu="detalle";
         Artículo artículo=listArticulos.get(op2-1);
         artículo.detalle();
@@ -273,24 +252,6 @@ class Principal {
             }else{
                 disponibles.add(i);
             }
-        }for (Artículo i : bangalore.getRevistas() ){
-            if (i.getPrestado()){
-                prestados.add(i);
-            }else{
-                disponibles.add(i);
-            }
-        }for (Artículo i : bangalore.getTesis() ){
-            if (i.getPrestado()){
-                prestados.add(i);
-            }else{
-                disponibles.add(i);
-            }
-        }for (Artículo i : bangalore.getEnsayos() ){
-            if (i.getPrestado()){
-                prestados.add(i);
-            }else{
-                disponibles.add(i);
-            }
         }for (Artículo i : bangalore.getBlurays() ){
             if (i.getPrestado()){
                 prestados.add(i);
@@ -299,15 +260,6 @@ class Principal {
             }
         }
     }
-    static Usuario usuarioEjemplo(){
-        Usuario u=new Usuario();
-        u.setID("asd-1234");
-        u.setPass("pass");
-        u.setNombre("Fulano");
-        u.setDirección("xy y XD esquina");
-        u.setEmail("email@yahoo.com");
-        u.setTelefono("09-955-5555");
-        return u;
-    }
+
 
 }

@@ -8,9 +8,6 @@ import static java.lang.System.out;
 class Biblioteca {
 
     private List<Artículo> libros = new ArrayList<>();
-    private List<Artículo> revistas = new ArrayList<>();
-    private List<Artículo> ensayos = new ArrayList<>();
-    private List<Artículo> tesis = new ArrayList<>();
     private List<Artículo> blurays = new ArrayList<>();
 
     public void detalleLibrosBiblioteca(){
@@ -44,36 +41,6 @@ class Biblioteca {
 
     public void setLibros(List<Artículo> libros) {
         this.libros = libros;
-    }
-
-    @SuppressWarnings("unused")
-    public List<Artículo> getRevistas() {
-        return revistas;
-    }
-
-    @SuppressWarnings("unused")
-    public void setRevistas(List<Artículo> revistas) {
-        this.revistas = revistas;
-    }
-
-    @SuppressWarnings("unused")
-    public List<Artículo> getEnsayos() {
-        return ensayos;
-    }
-
-    @SuppressWarnings("unused")
-    public void setEnsayos(List<Artículo> ensayos) {
-        this.ensayos = ensayos;
-    }
-
-    @SuppressWarnings("unused")
-    public List<Artículo> getTesis() {
-        return tesis;
-    }
-
-    @SuppressWarnings("unused")
-    public void setTesis(List<Artículo> tesis) {
-        this.tesis = tesis;
     }
 
     public List<Artículo> getBlurays() {

@@ -15,21 +15,23 @@ Seleccione una opción:
 * Salir (S) 
 U:
 #	| 			 Artículo 			|		  ID 		|	 Tipo de artículo
-1	| La máquina del más allá   	|	  HUZHICWJ		|		 Libro
-2	| Fantasia misteriosos      	|	  RWBYCDTB		|		 Libro
-3	| La ruina en el lago       	|	  ARHPUBOH		|		 Bluray
-4	| La ciudad y piratas       	|	  CHTWNKYQ		|		 Bluray
-5	| La máquina en el espacio  	|	  QALVHNDC		|		 Bluray
-6	| Misterios y piratas       	|	  MIFKJSJA		|		 Bluray
-7	| El maestro en la sombra   	|	  JWLDEHEP		|		 Bluray
-8	| Aliens radical            	|	  ULTMHQHY		|		 Bluray
+1	| Locura en el lago         	|	  XUEDUCPZ		|		 Libro
+2	| La era y piratas          	|	  TCOQKBYJ		|		 Libro
+3	| La máquina misteriosos    	|	  NRBUVVOZ		|		 Libro
+4	| Misterios contigo         	|	  JYOLNQPF		|		 Bluray
+5	| El maestro del mar        	|	  SLVAJQGO		|		 Bluray
+6	| Misterios de la guerra    	|	  FTQOISLV		|		 Bluray
+7	| Guerra en el tiempo       	|	  UPNUQLPO		|		 Bluray
+8	| La ciudad fantasma        	|	  MMPPEUCS		|		 Bluray
+9	| El auto del mar           	|	  ALXCGJEI		|		 Bluray
+10	| El maestro radical        	|	  YGVZMIJA		|		 Bluray
 
 Seleccione el artículo que desea pedir
 U:
-Libro # 	HUZHICWJ
-Título: 	La máquina del más allá 
-Autor: 		Bryan Del Toro
-Año: 		2005
+Libro # 	XUEDUCPZ
+Título: 	Locura en el lago       
+Autor: 		Mike Konstantinovich
+Año: 		1942
 Disponible:	SI
 
 Libro prestado con éxito!
@@ -43,23 +45,21 @@ Seleccione una opción:
 * Salir (S) 
 U:
 #	| 			 Artículo 			|		  ID 		|	 Tipo de artículo
-1	| La máquina del más allá   	|	  HUZHICWJ		|		 Libro
-2	| Guerra de la guerra       	|	  IRFHZBOR		|		 Libro
-3	| Aliens contigo            	|	  ONGDLVGK		|		 Libro
-4	| Aliens misteriosos        	|	  LISNTFNN		|		 Libro
-5	| La ruina del más allá     	|	  ZNEVEBLI		|		 Libro
-6	| Locura del mar            	|	  FRLSMRUK		|		 Libro
-7	| Aliens en todas partes    	|	  SLUCPMGH		|		 Bluray
-8	| La era en la sombra       	|	  XYNEJFAE		|		 Bluray
-9	| Aliens y piratas          	|	  NOUDKQKF		|		 Bluray
-10	| El arte y de más          	|	  BTXDJNZQ		|		 Bluray
+1	| Locura en el lago         	|	  XUEDUCPZ		|		 Libro
+2	| Locura misteriosos        	|	  JHGZYSDC		|		 Libro
+3	| Monstruos y piratas       	|	  ZAQGDXPC		|		 Libro
+4	| Aliens y piratas          	|	  SNPITRHD		|		 Libro
+5	| Misterios en todas partes  	|	  AAXTVCHB		|		 Libro
+6	| La máquina en el tiempo   	|	  FGEENQVM		|		 Bluray
+7	| La ciudad de la guerra    	|	  DFEINXFT		|		 Bluray
+8	| El secreto en el lago     	|	  WJERJDTX		|		 Bluray
 
 Seleccione el artículo que desea devolver
 U:
-Bluray # 	XYNEJFAE
-Título: 	La era en la sombra     
-Autor: 		Christopher Nolan
-Año: 		1969
+Bluray # 	WJERJDTX
+Título: 	El secreto en el lago   
+Autor: 		Martin Scorsese
+Año: 		1959
 Disponible:	NO
 
 Bluray devuelto con éxito!
@@ -74,28 +74,25 @@ Seleccione una opción:
 U:
 Seleccione el artículo:
 * (L)ibro
-* (R)evista
 * (B)lu-Ray
-* (T)ésis
-* (E)nsayo
 U:
 #	| 			 Película 			|		  Director 
-1	| Aliens en todas partes    	|	  Steven Spielberg
-2	| La ruina en el lago       	|	  James Cameron
-3	| La era en la sombra       	|	  Christopher Nolan
-4	| La ciudad y piratas       	|	  Alfred Hitchcock
-5	| La máquina en el espacio  	|	  Stanley Kubrick
-6	| Aliens y piratas          	|	  Martin Scorsese
-7	| El arte y de más          	|	  Quentin Tarantino
-8	| Misterios y piratas       	|	  James Cameron
-9	| El maestro en la sombra   	|	  Steven Spielberg
-10	| Aliens radical            	|	  Francis F. Coppola
+1	| Misterios contigo         	|	  Alejandro Iñárritu
+2	| El maestro del mar        	|	  Alejandro Iñárritu
+3	| La máquina en el tiempo   	|	  Christopher Nolan
+4	| Misterios de la guerra    	|	  Clint Eastwood
+5	| Guerra en el tiempo       	|	  Alejandro Iñárritu
+6	| La ciudad fantasma        	|	  Hayao Miyazaki
+7	| El auto del mar           	|	  Alejandro Iñárritu
+8	| La ciudad de la guerra    	|	  Peter Jackson
+9	| El maestro radical        	|	  James Cameron
+10	| El secreto en el lago     	|	  Martin Scorsese
 El número es muy grande
 
-Bluray # 	QALVHNDC
-Título: 	La máquina en el espacio
-Autor: 		Stanley Kubrick
-Año: 		2003
+Bluray # 	UPNUQLPO
+Título: 	Guerra en el tiempo     
+Autor: 		Alejandro Iñárritu
+Año: 		1972
 Disponible:	SI
 * Pedir el artículo (P)
 * Devolver el artículo (D)
