@@ -7,8 +7,6 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
 import java.util.Scanner;
-import static java.lang.System.in;
-import static java.lang.System.out;
 
 public class PrincipalTest  {
 
@@ -27,9 +25,9 @@ public class PrincipalTest  {
     public void mainTest() throws Exception {
         Principal.sc=sc;
         //datos falsos
-        Principal.bangalore.setLibros(Editorial.crearLibros(7));
-        Principal.bangalore.setBlurays(Editorial.crearBluray(10));
-        Principal.usuario=Principal.usuarioEjemplo();
+        Principal.bangalore.setLibros(Inventor.crearLibros(7));
+        Principal.bangalore.setBlurays(Inventor.crearBluray(10));
+        Principal.usuario=Inventor.crearUsuario();
         String menu="bienvenida";
         Imprenta.imprimirInicio();
         do {

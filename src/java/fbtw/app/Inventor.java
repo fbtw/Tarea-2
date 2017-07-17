@@ -2,8 +2,10 @@ package fbtw.app;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.security.SecureRandom;
 
-class Editorial {
+class Inventor {
+    private static final SecureRandom dado = new SecureRandom();
 
     public static List<Artículo> crearLibros(int x){
         List<Artículo> lib = new ArrayList<>();
@@ -13,8 +15,8 @@ class Editorial {
             nuevoLibro.setAutor(crearAutor());
             nuevoLibro.setTítulo(crearTítulo());
             nuevoLibro.setPrestado(crearBooleano());
-            nuevoLibro.setAño((int)(Math.random()*121+1900));
-            nuevoLibro.setTipo(Tipo.Libro);
+            nuevoLibro.setAño((dado.nextInt(121)+1900));
+            nuevoLibro.setTipo(Artículo.Tipo.Libro);
             lib.add(nuevoLibro);
         }
         return lib;
@@ -27,15 +29,25 @@ class Editorial {
             nuevoBluray.setAutor(crearDirector());
             nuevoBluray.setTítulo(crearTítulo());
             nuevoBluray.setPrestado(crearBooleano());
-            nuevoBluray.setAño((int)(Math.random()*71+1950));
-            nuevoBluray.setTipo(Tipo.Bluray);
+            nuevoBluray.setAño((dado.nextInt(71)+1950));
+            nuevoBluray.setTipo(Artículo.Tipo.Bluray);
             blu.add(nuevoBluray);
         }
         return blu;
     }
+    static Usuario crearUsuario(){
+        Usuario u=new Usuario();
+        u.setID("asd-1234");
+        u.setPass("pass");
+        u.setNombre(crearAutor());
+        u.setDirección("xy y XD esquina");
+        u.setEmail(crearID()+ "@yahoo.com");
+        u.setTelefono("09 9"+dado.nextInt(1000000) );
+        return u;
+    }
     public static String crearDirector(){
         String direc="";
-        int azar = (int)(Math.random()*12+1);
+        int azar = (dado.nextInt(12)+1);
         switch (azar) {
             case 1: direc="Alejandro Iñárritu"; break;
             case 2: direc="Steven Spielberg"; break;
@@ -54,7 +66,7 @@ class Editorial {
     }
     public static String crearAutor (){
         String autor="";
-        int azar = (int)(Math.random()*20+1);
+        int azar = (dado.nextInt(20)+1);
         switch (azar) {
             case 1: autor="Anthony"; break;
             case 2: autor="Bryan"; break;
@@ -77,7 +89,7 @@ class Editorial {
             case 19: autor="Samuel"; break;
             case 20: autor="Sandra"; break;
         }
-        azar = (int)(Math.random()*20+1);
+        azar = (dado.nextInt(20)+1);
         switch (azar) {
             case 1: autor+=" Del Toro"; break;
             case 2: autor+=" Urcuango"; break;
@@ -105,7 +117,7 @@ class Editorial {
     }
     public static String crearTítulo(){
         String título="";
-        int azar = (int)(Math.random()*20+1);
+        int azar = (dado.nextInt(20)+1);
         switch (azar) {
             case 1: título="La era"; break;
             case 2: título="Guerra"; break;
@@ -129,7 +141,7 @@ class Editorial {
             case 20: título="El secreto"; break;
 
         }
-        azar = (int)(Math.random()*20+1);
+        azar = (dado.nextInt(20)+1);
         switch (azar) {
             case 1: título+=" en el espacio"; break;
             case 2: título+=" de los imperios"; break;
@@ -156,15 +168,12 @@ class Editorial {
         return título;
     }
     public static boolean crearBooleano(){
-        return (int) (Math.random() * 2) == 1;
+        return (dado.nextInt(2)  ) == 1;
     }
     public static String crearID(){
-       // int rand = (int)(Math.random()*43+48); //48->90
         String ID="";
         for (int i=0;i<8;i++)
-            ID += (char)((int)(Math.random()*26+65));
-        //out.print("c:" +c);
-        //String.valueOf(rand);
+            ID += (char)((dado.nextInt(26)+65));
         return ID;
     }
 }
