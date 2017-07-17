@@ -11,6 +11,7 @@ class Artículo {
     private int año;
     private Tipo tipo;
 
+
     Artículo() {
         this.id = "";
         this.título = "";
@@ -97,5 +98,10 @@ class Artículo {
 
     void setTipo(Tipo tipo) {
         this.tipo = tipo;
+    }
+
+    enum Tipo {
+        Libro,
+        Bluray
     }
 }
