@@ -1,74 +1,76 @@
 **Biblioteca de Bengalore**
 
-Esta es la biblioteca pública de Bengalore, el sistema descrito a continuación tiene varias funciones que facilitarán la vida del bibliotecario como buscar en una báse de datos, pedir y devolver libros disponibles,
- por el momento la biblioteca cuenta solo con libros, sin embargo el programa está diseñado para que vayan agregando nuevos artículos diferentes en el futuro.
+Esta es la biblioteca pública de Bengalore, el sistema descrito a continuación tiene varias funciones que facilitarán la vida del bibliotecario como buscar en una base de datos, pedir y devolver artículos disponibles,
+ por el momento la biblioteca cuenta con libros y películas.
  
 
-**Recursos**
+**resourse**
 
 `usuario.txt`
-Simula el ingreso de datos del usuario, en el orden de ejecucion y separando cada comando por líneas.
-Para entrar a biblioteca, buscar un líbro, escojer la segunda opción, pedirlo prestado y salir de la biblioteca se ingresaría: `C` `B` `2` `P` `S`
+Simula el ingreso de datos del usuario, en el orden de ejecución y separando cada comando por líneas.
+Para entrar a biblioteca, buscar un libro, escoger la segunda opción, pedirlo prestado y salir de la biblioteca se ingresaría: `C` `B` `2` `P` `S`
 _No es sensible a mayúsculas_ 
-
-`cinco.txt` = 5 _creado con propósitos de prueba_
 
 `ejemplo#.txt` archivos de salida de datos, muestran resultados de ejemplo para varias pruebas realizadas.
 
-**Fuentes**
+**java**
 
-`Libro.java` Clase con la que se instancian libros, contiene solo 1 método que imprime los detalles, hereda los valores de Artículo
-
-`Artículo.java` Clase abstracta con variables para posibles artículos, posibilidades enumeradas en CualArtículo
-
-`CualArtículo.java` Enumera los artículos que podrían estar en la biblioteca como Libro o Revista.
+`Artículo.java` Clase con la que se instancia posibles artículos, los cuales pueden ser libros o películas
 
 `Biblioteca.java` Clase con la que se instancia toda la biblioteca enlista todos los artículos que posee.
 
-`Editorial.java` Empresa que genera libros ficticios con el propósito de llenar la biblioteca.
-
 `Imprenta.java` Imprime los mensajes del sistema en la consola.
 
+`Inventor.java` Clase que inventa libros, películas y usuarios ficticios con el propósito de llenar la biblioteca.
 
-**Pruebas**
+`Usuario.java` Persona registrada que va a acceder a los servicios de la biblioteca.
 
-`LibroTest.java`, `BibliotecaTest.java`, `EditorialTest.java` pruebas iniciales con las que se fueron creando las clases en **Fuentes**
+**prueba**
+
+`ArtículoTest.java`, `BibliotecaTest.java`, `IngresoTest`, `InventorTest.java` y `UsuarioTest` pruebas iniciales con las que se fueron creando las clases.
+
+`Principal.java`
+esta clase es la que corre la aplicación, contiene los métodos que conforman el hilo de ejecución del programa, usa la consola para ingresar e imprimir datos.
 
 `PrincipalTest.java`
-esta clase es la que corre la aplicación, contiene todas las pruebas del hilo de ejecución principal.
+clase que corre la aplicación pero a diferencia de `Principal.java` utiliza `Usuario.txt` como ingreso e imprime a un archivo de `ejemplo#.txt` en vez de la consola. 
 
 Hilo de ejecución:
 
->Se declaran las variables de ingreso de datos y se lee el archivo.
+>Se crea una biblioteca y un usuario, se llenan los datos usando la clase Inventor.
 
->Before/prep(): instancia el lector (scanner) antes de la primera prueba, ya sea todo el thread o pruebas individuales, caso contrario leería todo el archivo desde el comienzo en cada prueba.
+>Prep(): instancia el lector (scanner) antes de la primera prueba, ya sea todo el thread o pruebas individuales,
 
->inicio(): Muestra mensaje de bienvenida y espera la tecla 'c'
->>menú(): Muestra las opciones de buscar o salir.
->>>menú2(): Espera a que se ingrese el número del artículo.
->>>>detalle(): Muestra las opciones pedir, devolver y volver, las 3 opciones abren el primer menú.
+>elegir(): Escoge el menú al cual se a a ingresar.
 
->>menú(): De regreso se busca de nuevo y se repite o se sale.
+>>menúBienvenida(): Muestra mensaje de bienvenida.
 
->>>salir(): Mensaje despedida
+>>menúUsuario()/menúContraseña(): Ingreso del usuario.
 
-Se utiliza loop infinito con **brakes** _do{...}while(true)_ para evitar que se generen nuevos threads al elegir opciones, 
-cada vez que se repite el ciclo se imprime un mensaje de error; 
-anteriormente usaba un verificador booleano que era **verdad** al entrar en una opción correcta y **falso** al entrar en otro ciclo, 
-los cilos superiores no terminaban hasta no salir haciendo que _salir()_ se ejecute múltiples veces. 
+>>menúPrincipal(): Opciones: Buscar artículo, pedir, devolver, ver información y salir. 
 
-Al final de cada impresión se muestra el ingreso que hizo el usuario, ejemplo: 
-`U: c`
+>>>menúTipo(): Selecciona el tipo del artículo; libro o película.
+
+>>>>menúArticulo(): Escoge el número de artículo de una lista.
+
+>>>>>menúDetalle(): Pide o devuelve el articulo seleccionado.
+
+>>menúPrestar(): Escoge el número a pedir entre todos los artículos.
+
+>>menúDevolver(): Escoge el número a devolver entre todos los artículos.
 
 
-Cuando se producen excepciones
-* _FileNotFoundException_: El nombre del archivo 'usuario' es incorrecto (throw)
-* _java.lang.Exception_: Una prueba dentro de otra falla y hace fallar a la de arriba (throw)
-* _NumberFormatException_: Se ingresa en un entero un caracter que no es un número. Se imprime un error informativo.
+Se utiliza loop infinito con **brakes** _do{...}while()_ que repite a _elegir()_ hasta que el menú sea _salir_, 
 
-**Otros**
 
-`cementerio.txt `y `cementerioTest.java` Aquí se encuentran las clases y métodos que ya no estan con nosotros. 
+Cuando se imprimen las excepciones
+* _Error_: La opción ingresada no existe.
+* _ErrorNúmero_: Se ingresa un caracter que no es un número.
+* _ErrorTamañoNúmero_: El número es mayor a la lista.
+* _ErrorUsuario_: Nombre incorrecto.
+* _ErrorContraseña_: Contraseña incorrecta.
+* _ImprimirVacio_: La lista de artículos está vacía.
+
 
 
 **Datos técnicos**
